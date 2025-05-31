@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--Fuentes de Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <!--Iconos de Font Awesone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Suave Descansar - Tienda de pijamas</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="/imagenes/logoVioleta.jpg" alt="Logo de Suave Descansar. Tienda de pijamas">
+        <h1>Suave Descansar</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"> Inicio</i></a></li>
+                <li><a href="#productos"><i class="fa-solid fa-bed"> Productos</i></a></li>
+                <li><a href="#nosotros"><i class="fa-solid fa-user"> Nosotros</i></a></li>
+                <li><a href="#formularioContacto"><i class="fa-solid fa-envelope"> Contacto</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- PRODUCTOS -->
+        <section class="productos" id="productos">
+            <h2>Productos</h2>
+            <div id="contenedor-productos">
+                <div class="producto">
+                    <img src="/imagenes/pijama1.jpg" alt="Pijama de Garfield" width="600" height="400">
+                    <h3>Pijama de Garfield</h3>
+                    <p>$30.000</p>
+                </div>
+                <div class="producto">
+                    <img src="/imagenes/pijama2.jpg" alt="Pijama de dibujito frutilla" width="600" height="400">
+                    <h3>Pijama de dibujito frutilla</h3>
+                    <p>$30.000</p>
+                </div>
+                <div class="producto">
+                    <img src="/imagenes/pijama3.jpg" alt="Pijama de Mickey azul" width="600" height="400">
+                    <h3>Pijama de Mickey azul</h3>
+                    <p>$30.000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <div class="nosotros" id="nosotros">
+            <h2 class="titulo">Bienvenido a Suave Descansar</h2>
+            <p>
+                En nuestra tienda encontrarás una amplia variedad de pijamas para todas las edades y estilos. Desde
+                pijamas clásicos hasta los más modernos, tenemos algo para todos. Somos una empresa familiar.
+            </p>
+            <p>Ofrecemos productos de alta calidad a precios competitivos. Nos enorgullece ofrecer un excelente servicio al
+                cliente y una experiencia de compra agradable.</p>
+            <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en ponerte en contacto con nosotros. Estamos aquí para
+                ayudarte a encontrar el pijama perfecto para ti o para regalar.</p>
+            <h2>Ubicación</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52490.92711157511!2d-58.605095273128576!3d-34.68795066836754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc622f9709805%3A0xb5f373c7721a50a5!2sSan%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748100638916!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- REDES SOCIALES -->
+        <div class="redes">
+            <h2>Redes Sociales</h2>
+            <div class="iconos-redes">
+                <a href="https://www.instagram.com/suave_descansar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"><i class="fa-brands fa-instagram"> Instagram</i></a>
+                <a href="#"><i class="fa-brands fa-facebook"> Facebook</i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"> Twitter</i></a>
+            </div>
+            <div class="videoRedes">
+                <video controls muted autoplay loop>
+                    <source src="/videos/VideoPijama.mp4" type="video/mp4">
+            </div>
+        </div>
+
+        <!-- CONTACTO -->
+        <form action="https://formspree.io/f/mldbkzbn" method="post" class="formularioContacto" id="formularioContacto">
+            <h2>Contacto</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- RESENIAS -->
+        <h2>Reseñas de Clientes</h2>
+        <div class="resenias">
+            <div class="resenia">
+                <img src="/imagenes/EsperanzaAna.jpg" alt="Foto de Esperanza Ana" width="200" height="200">
+                <div class="reseniaTexto">
+                    <span class="reseniaNombre">Esperanza Ana</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><br>
+                    <span class="fecha">Fecha: 15/01/2025</span>
+                </div>
+            </div>
+            <div class="resenia">
+                <img src="/imagenes/GonzalesLaura.jpg" alt="Foto de Gonzales Laura" width="200" height="200">
+                <div class="reseniaTexto">
+                    <span class="reseniaNombre">Gonzales Laura</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><br>
+                    <span class="fecha">Fecha: 20/02/2025</span>
+                </div>
+            </div>
+            <div class="resenia">
+                <img src="/imagenes/PerezJorge.jpg" alt="Foto de Perez Jorge" width="200" height="200">
+                <div class="reseniaTexto">
+                    <span class="reseniaNombre">Perez Jorge</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><br>
+                    <span class="fecha">Fecha: 10/03/2025</span>
+                </div>
+            </div>
+
+            <div class="resenia">
+                <img src="/imagenes/ChavezPaula.jpg" alt="Foto de Chavez Paula" width="200" height="200">
+                <div class="reseniaTexto">
+                    <span class="reseniaNombre">Chavez Paula</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i></i><br>
+                    <span class="fecha">Fecha: 10/03/2025</span>
+                </div>
+            </div>
+
+            <div class="resenia">
+                <img src="/imagenes/MenendezPablo.jpg" alt="Foto de Menendez Pablo" width="200" height="200">
+                <div class="reseniaTexto">
+                    <span class="reseniaNombre">Menendez Pablo</span><br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><br>
+                    <span class="fecha">Fecha: 10/03/2025</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Suave Descansar. Todos los derechos reservados.</p>
+        <nav class="footerNav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#formularioContacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

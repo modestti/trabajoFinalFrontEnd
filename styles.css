@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    padding: 20px;
+    gap: 30px;
+}
+
+header .logo {
+    height: 100%;
+    object-fit: contain;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2.5em;
+    color: blueviolet;
+    font-family: "Encode Sans SC", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li i {
+    margin-right: 5px;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+nav ul li i:hover {
+    color: blueviolet;
+}
+
+/* MAIN CONTENT */
+main {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(blueviolet, white, blueviolet);
+}
+
+main h2 {
+    text-align: center;
+    font-family: "Encode Sans SC", sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+}
+
+.iconos-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.iconos-redes a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.iconos-redes a:hover {
+    color: purple
+}
+
+.formularioContacto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.videoRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.producto {
+    background-color: black;
+    color: white;
+    width: 20rem;
+    border: 2px solid black; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto h3 {
+    text-align: center;
+    font-family: "Encode Sans SC", sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.producto p {
+    text-align: center;
+    padding: 0 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
+}
+
+#nosotros p {
+    font-size: 1.2em;
+    text-align: center;
+    font-family: "Encode Sans SC", sans-serif;
+}
+
+#nosotros .titulo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+/* RESENAS*/
+.resenias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 20px;
+    place-items: center; 
+}
+
+.resenia {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resenia img{
+    border-radius: 20px;
+}
+.resenia:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.reseniaTexto {
+    padding: 20px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+
+.reseniaNombre{
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.resenia .fa-solid {
+    color: gold;
+}
+
+.resenia .fa-regular {
+    color: gold;
+}
+
+.resenia .fecha {
+    font-size: 0.5em;
+    color: gray;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footerNav ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footerNav ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footerNav ul a:hover {
+    color: blueviolet;
+}
