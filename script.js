@@ -1,7 +1,3 @@
-console.log("Enlazando script.js");
-console.log("Se ha enlazado correctamente el script.js");
-
-
 let productos = [
 {
     id : "01",
@@ -112,8 +108,12 @@ function actualizarCarrito() {
     }
     contenedorCarrito.innerHTML += `<div class="total">Total: $${total.toLocaleString()}</div>`;
 
-    const nuevaListaCarrito = document.querySelector(".producto-carrito");
-    nuevaListaCarrito.addEventListener("click", manejarClickActualizar);
+    const productosCarrito = document.querySelectorAll(".producto-carrito");
+
+    productosCarrito.forEach(producto => {
+        producto.addEventListener("click", manejarClickActualizar);
+    });
+    
 }
 
 function agregarProductoAlCarrito(id) {
