@@ -24,39 +24,34 @@
 <body>
     <header>
         <!--BANNER CON BARRA DE NAVEGACION-->
-        <img class="logo" src="./imagenes/logoVioleta.jpg" alt="Logo de Suave Descansar. Tienda de pijamas">
-        <h1>Suave Descansar</h1>
-        <nav>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"> Inicio</i></a></li>
-                <li><a href="#productos"><i class="fa-solid fa-bed"> Productos</i></a></li>
-                <li><a href="#nosotros"><i class="fa-solid fa-user"> Nosotros</i></a></li>
-                <li><a href="#formularioContacto"><i class="fa-solid fa-envelope"> Contacto</i></a></li>
-            </ul>
-        </nav>
+        <div class="contenedor-header">
+            <img class="logo" src="./imagenes/logoVioleta.jpg" alt="Logo de Suave Descansar. Tienda de pijamas">
+            <h1 class="titulo">Suave Descansar</h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#"><i class="fa-solid fa-house"> Inicio</i></a></li>
+                    <li><a href="#productos"><i class="fa-solid fa-bed"> Productos</i></a></li>
+                    <li><a href="#nosotros"><i class="fa-solid fa-user"> Nosotros</i></a></li>
+                    <li><a href="#formularioContacto"><i class="fa-solid fa-envelope"> Contacto</i></a></li>
+                    <li><a href="#carrito"><i class="fa-solid fa-cart-shopping"> Carrito</i></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <!-- PRODUCTOS -->
         <section class="productos" id="productos">
             <h2>Productos</h2>
             <div id="contenedor-productos">
-                <div class="producto">
-                    <img src="./imagenes/pijama1.jpg" alt="Pijama de Garfield" width="600" height="400">
-                    <h3>Pijama de Garfield</h3>
-                    <p>$30.000</p>
-                </div>
-                <div class="producto">
-                    <img src="./imagenes/pijama2.jpg" alt="Pijama de dibujito frutilla" width="600" height="400">
-                    <h3>Pijama de dibujito frutilla</h3>
-                    <p>$30.000</p>
-                </div>
-                <div class="producto">
-                    <img src="./imagenes/pijama3.jpg" alt="Pijama de Mickey azul" width="600" height="400">
-                    <h3>Pijama de Mickey azul</h3>
-                    <p>$30.000</p>
-                </div>
             </div>
         </section>
+
+        <!-- CARRITO  -->
+         <section class="carrito" id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div class="carrito-contenedor" id="carrito-contenedor">
+            </div>
+         </section>
 
         <!-- NOSOTROS -->
         <div class="nosotros" id="nosotros">
@@ -177,9 +172,10 @@
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#formularioContacto">Contacto</a></li>
+                <li><a href="#carrito">Carrito</a></li>
             </ul>
         </nav>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
